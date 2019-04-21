@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 WordPress-Plugin-Template
+=======
+[![Build Status](https://www.travis-ci.org/wpugph/WordPress-Plugin-Template.svg?branch=master)](https://www.travis-ci.org/wpugph/WordPress-Plugin-Template)
+
+WordPress Plugin Template
+>>>>>>> 61ea882 (Adding build badge)
 =========================
 
 A robust and GPL-licensed code template for creating a standards-compliant WordPress plugin.
