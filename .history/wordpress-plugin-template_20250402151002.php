@@ -2,10 +2,10 @@
 /**
  * Plugin Name: WordPress Plugin Template
  * Version: 2.0.0
- * Plugin URI: https://infinityweb.tn/
+ * Plugin URI: https://www.agence-web-lausanne.ch/
  * Description: A robust and modern starter template for your next WordPress plugin.
- * Author: Akrem Belkahla
- * Author URI: https://infinityweb.tn/
+ * Author: Agence Web Lausanne
+ * Author URI: https://www.agence-web-lausanne.ch/
  * Requires at least: 5.0
  * Tested up to: 6.4
  * Requires PHP: 7.4
