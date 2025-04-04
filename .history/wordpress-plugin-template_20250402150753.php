@@ -2,10 +2,10 @@
 /**
  * Plugin Name: WordPress Plugin Template
  * Version: 2.0.0
- * Plugin URI: https://infinityweb.tn/
+ * Plugin URI: https://github.com/hlashbrooke/WordPress-Plugin-Template
  * Description: A robust and modern starter template for your next WordPress plugin.
- * Author: Akrem Belkahla
- * Author URI: https://infinityweb.tn/
+Ar emk * Author: Hugh Lashbrooke
+ * Author URI: https://www.hughlashbrooke.com/
  * Requires at least: 5.0
  * Tested up to: 6.4
  * Requires PHP: 7.4
@@ -39,7 +39,7 @@ require_once 'includes/lib/class-wordpress-plugin-template-taxonomy.php';
  * @return object WordPress_Plugin_Template
  */
 function wordpress_plugin_template() {
-	$instance = WordPress_Plugin_Template::instance( __FILE__, '2.0.0' );
+	$instance = WordPress_Plugin_Template::instance( __FILE__, '1.0.0' );
 
 	if ( is_null( $instance->settings ) ) {
 		$instance->settings = WordPress_Plugin_Template_Settings::instance( $instance );
