@@ -1,6 +1,6 @@
 # Ignore node_modules directory
 node_modules/
-.hostory
+.history
 
 # Ignore Grunt generated files
 assets/js/*.min.js
