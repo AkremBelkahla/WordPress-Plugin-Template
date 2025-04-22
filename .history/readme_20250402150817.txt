@@ -1,5 +1,5 @@
 === WordPress Plugin Template ===
-Contributors: hlashbrooke
+Contributors: AkremBelkahla
 Donate link: https://www.hughlashbrooke.com/donate
 Tags: wordpress, plugin, template, modern
 Requires at least: 5.0

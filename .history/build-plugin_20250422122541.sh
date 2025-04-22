@@ -21,7 +21,7 @@ CLASS=${NAME// /_}
 TOKEN=$( tr '[A-Z]' '[a-z]' <<< $CLASS)
 SLUG=${TOKEN//_/-}
 
-git clone https://github.com/AkremBelkahla/$DEFAULT_SLUG.git $FOLDER/$SLUG
+git clone https://github.com/$DEFAULT_SLUG.git $FOLDER/$SLUG
 
 echo "Removing git files..."
 

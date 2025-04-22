@@ -1,5 +1,5 @@
 {
-	"name": "AkremBelkahla/wordpress-plugin-template",
+	"name": "wordpress-plugin-template",
 	"license": "GPL-2.0-or-later",
 	"description": "A robust code template for creating a standards-compliant WordPress plugin.",
 	"keywords": [
@@ -12,7 +12,7 @@
 		"php": ">=7.4",
 		"squizlabs/php_codesniffer": "^3.7.2"
     },
-t	"require-dev": {
+	"require-dev": {
         "wp-coding-standards/wpcs": "^3.0",
         "phpcompatibility/phpcompatibility-wp": "^2.1",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0"

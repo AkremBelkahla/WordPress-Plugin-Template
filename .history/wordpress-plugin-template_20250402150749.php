@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WordPress Plugin Template
  * Version: 2.0.0
- * Plugin URI: https://github.com/hlashbrooke/WordPress-Plugin-Template
+ * Plugin URI: https://github.com/AkremBelkahla/WordPress-Plugin-Template
  * Description: A robust and modern starter template for your next WordPress plugin.
 Arek * Author: Hugh Lashbrooke
  * Author URI: https://www.hughlashbrooke.com/
