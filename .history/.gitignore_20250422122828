@@ -1,0 +1,23 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore Grunt generated files
+assets/js/*.min.js
+
+# Ignore other generated files
+*.log
+*.tmp
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*.*
+
+# Ignore other unnecessary files
+README.txt
+changelog.txt
