@@ -1,28 +1,51 @@
 <?php
-/*
+/**
  * Plugin Name: WordPress Plugin Template
- * Version: 1.0
- * Plugin URI: http://www.hughlashbrooke.com/
- * Description: Basic template for creating a WordPress plugin
- * Author: Hugh Lashbrooke
- * Author URI: http://www.hughlashbrooke.com/
- * Requires at least: 3.0
- * Tested up to: 3.5.1
- * 
+ * Version: 2.0.0
+ * Plugin URI: https://infinityweb.tn/
+ * Description: A robust and modern starter template for your next WordPress plugin.
+ * Author: Akrem Belkahla
+ * Author URI: https://infinityweb.tn/
+ * Requires at least: 5.0
+ * Tested up to: 6.4
+ * Requires PHP: 7.4
+ * Text Domain: wordpress-plugin-template
+ * Domain Path: /lang/
+ * License: GPL v2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ *
  * @package WordPress
  * @author Hugh Lashbrooke
  * @since 1.0.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
-// Include plugin class files
-require_once( 'classes/class-wordpress-plugin-template.php' );
-require_once( 'classes/class-wordpress-plugin-template-settings.php' );
-require_once( 'classes/post-types/class-wordpress-plugin-template-post_type.php' );
+// Load plugin class files.
+require_once 'includes/class-wordpress-plugin-template.php';
+require_once 'includes/class-wordpress-plugin-template-settings.php';
 
-// Instantiate necessary classes
-global $plugin_obj;
-$plugin_obj = new WordPress_Plugin_Template( __FILE__ );
-$plugin_settings_obj = new WordPress_Plugin_Template_Settings( __FILE__ );
-$plugin_post_type_obj = new WordPress_Plugin_Template_Post_Type( __FILE__ );
+// Load plugin libraries.
+require_once 'includes/lib/class-wordpress-plugin-template-admin-api.php';
+require_once 'includes/lib/class-wordpress-plugin-template-post-type.php';
+require_once 'includes/lib/class-wordpress-plugin-template-taxonomy.php';
+
+/**
+ * Returns the main instance of WordPress_Plugin_Template to prevent the need to use globals.
+ *
+ * @since  1.0.0
+ * @return object WordPress_Plugin_Template
+ */
+function wordpress_plugin_template() {
+	$instance = WordPress_Plugin_Template::instance( __FILE__, '2.0.0' );
+
+	if ( is_null( $instance->settings ) ) {
+		$instance->settings = WordPress_Plugin_Template_Settings::instance( $instance );
+	}
+
+	return $instance;
+}
+
+wordpress_plugin_template();
